@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean's Button</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Dean's Button</h2>
+            </div>
+            <div class="card-body">
+                <form action="/fetch_data" method="get">
+                    <div class="form-group">
+                        <label for="authorIds">Enter Scopus Author IDs (comma-separated):</label>
+                        <input type="text" class="form-control" id="authorIds" name="author_ids" placeholder="e.g., 6701858763,20433296900" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 128" height="24" width="22"><path d="M20 10h68v10H20zm0 22h68v10H20zM2 10h10v10H2zm0 22h10v10H2zm0 22h10v10H2zm0 22h10v10H2zm18-22v10h22.98c1.64-3.7 3.86-7.06 6.54-10H20zm19.96 22H20v10h20.48a36.6 36.6 0 0 1-.68-7c0-1.02.08-2 .16-3zM58 79c0-10.5 8.5-19 19-19s19 8.5 19 19-8.5 19-19 19-19-8.5-19-19zm57.54 31.46l-14.82-14.82C104.04 90.94 106 85.2 106 79c0-16.02-12.98-29-29-29S48 62.98 48 79s12.98 29 29 29c6.2 0 11.94-1.96 16.66-5.28l14.82 14.82 7.06-7.08z"/></svg>
+                        Get Data</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
